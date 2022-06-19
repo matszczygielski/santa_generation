@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>905</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="main_widget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#main_widget{
+background-color: qlineargradient(spread:reflect, x1:0.279, y1:0.0913636, x2:1, y2:1, stop:0.0833333 rgba(226, 0, 4, 255), stop:1 rgba(255, 221, 222, 255));
+}</string>
+   </property>
+   <widget class="QLabel" name="title_label">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>391</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Chancery L</family>
+      <pointsize>48</pointsize>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Santa Generator</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rightgif_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>271</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Downloads/Screenshot 2021-11-12 at 15-23-58 Mean Girls Dancing GIF - Find Share on GIPHY.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="leftgif_label">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>10</y>
+      <width>271</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Downloads/Screenshot 2021-11-12 at 15-23-58 Mean Girls Dancing GIF - Find Share on GIPHY.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="add_santa_label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>180</y>
+      <width>441</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Chilanka</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: qlineargradient(spread:repeat, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(26, 111, 202, 255), stop:0.740418 rgba(255, 53, 56, 255));
+background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+background-color: qconicalgradient(cx:1, cy:0, angle:50.3, stop:0 rgba(203, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string>1. Dodaj Mikołaja</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="add_santa_input">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>250</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_santa_button">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>250</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Noto Sans CJK HK&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Dodaj</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="add_constrains_label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>320</y>
+      <width>441</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Chilanka</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: qlineargradient(spread:repeat, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(26, 111, 202, 255), stop:0.740418 rgba(255, 53, 56, 255));
+background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+background-color: qconicalgradient(cx:1, cy:0, angle:50.3, stop:0 rgba(203, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string>2. Dodaj ograniczenia</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="constrain_pick_right_input">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>380</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="constrain_pick_description">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>380</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans Mono CJK HK</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Noto Sans Mono CJK HK&quot;;</string>
+    </property>
+    <property name="text">
+     <string>nie wylosuje</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="constrain_pick_left_input">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>380</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_constrain_pick_button">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>410</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Noto Sans CJK HK&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Dodaj</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="generate_button">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>290</y>
+      <width>221</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Noto Sans CJK HK&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Generuj</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="generate_label">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>180</y>
+      <width>371</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Chilanka</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+background-color: qlineargradient(spread:repeat, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(26, 111, 202, 255), stop:0.740418 rgba(255, 53, 56, 255));
+background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+background-color: qconicalgradient(cx:1, cy:0, angle:50.3, stop:0 rgba(203, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string>3. Wygeneruj Mikołaów</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="santa_table">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>981</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Chilanka</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;Chilanka&quot;;
+background-color: rgb(255, 227, 226);</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Mikałaj</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>nie wylosuje</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Secret URL</string>
+     </property>
+    </column>
+   </widget>
+   <zorder>generate_label</zorder>
+   <zorder>title_label</zorder>
+   <zorder>rightgif_label</zorder>
+   <zorder>leftgif_label</zorder>
+   <zorder>add_santa_label</zorder>
+   <zorder>add_santa_input</zorder>
+   <zorder>add_santa_button</zorder>
+   <zorder>add_constrains_label</zorder>
+   <zorder>constrain_pick_right_input</zorder>
+   <zorder>constrain_pick_description</zorder>
+   <zorder>constrain_pick_left_input</zorder>
+   <zorder>add_constrain_pick_button</zorder>
+   <zorder>generate_button</zorder>
+   <zorder>santa_table</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

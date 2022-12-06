@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1069</width>
+    <height>882</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+    background-color: rgb(106, 22, 22);
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignTop">
+     <widget class="QWidget" name="topbarContainer" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="statusSubContainer" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="styleSheet">
+             <string notr="true">* {
+    border: none;
+    background-color: rgb(156, 22, 22);
+    border-radius: 20;
+}
+
+QLabel {
+    font: 14pt &quot;Chilanka&quot;;
+    color: rgb(222, 221, 218); 
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="statusMsgLbl">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Hello World</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight|Qt::AlignTop">
+        <widget class="QWidget" name="settingsSubContainer" native="true">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item alignment="Qt::AlignRight">
+           <widget class="QFrame" name="utils">
+            <property name="styleSheet">
+             <string notr="true">*{
+    border: none;
+    background-color: rgb(156, 22, 22);
+    border-radius: 20;
+}
+
+QPushButton:hover:!pressed {
+    border-bottom: 2px solid rgb(106, 22, 22);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="leftMargin">
+              <number>15</number>
+             </property>
+             <property name="rightMargin">
+              <number>15</number>
+             </property>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QPushButton" name="undoBtn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>resources/undo.svg</normaloff>resources/undo.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>22</width>
+                 <height>22</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignRight">
+              <widget class="QPushButton" name="keyBtn">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>resources/key.svg</normaloff>resources/key.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignRight">
+           <widget class="QFrame" name="languages">
+            <property name="styleSheet">
+             <string notr="true">* {
+    border: none;
+    background-color: rgb(156, 22, 22);
+    border-radius: 20;
+}
+
+QPushButton:hover:!pressed {
+    border-bottom: 2px solid rgb(106, 22, 22);
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QPushButton" name="plBtn">
+               <property name="sizeIncrement">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>36</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>resources/PL.svg</normaloff>resources/PL.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="autoRepeat">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="engBtn">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset>
+                 <normaloff>resources/UK.svg</normaloff>resources/UK.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>24</width>
+                 <height>24</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QWidget" name="titleContainer" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>782</width>
+        <height>466</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Chilanka</family>
+        <pointsize>50</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">*{
+    font: 75 50pt &quot;Chilanka&quot;;
+    color: rgb(222, 221, 218);
+    border: none;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>533</width>
+           <height>123</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item alignment="Qt::AlignLeft">
+           <widget class="QLabel" name="titleLbl">
+            <property name="font">
+             <font>
+              <family>Chilanka</family>
+              <pointsize>50</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Santa Generator</string>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="titleIconLbl">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Chilanka</family>
+              <pointsize>50</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="pixmap">
+             <pixmap>resources/santa.svg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QWidget" name="inputContainer" native="true">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    font: 20pt &quot;Chilanka&quot;;
+    color: rgb(222, 221, 218); 
+}
+
+QFrame {
+    border: none;
+}
+
+QPushButton {
+    background-color: rgb(244, 76, 76);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(222, 221, 218); 
+    font: 18pt &quot;Chilanka&quot;;
+    min-width: 150px;
+    padding: 6px;
+ }
+
+QPushButton:hover {
+    background-color: rgb(222, 221, 218); 
+    border-color: rgb(244, 76, 76);
+ }
+
+QPushButton:pressed {
+    background-color: rgb(192, 191, 188);
+ }
+
+QComboBox {
+    font: 18pt &quot;Chilanka&quot;;
+    selection-background-color: rgb(244, 76, 76);
+    min-width: 150px;
+}
+
+QTextEdit{
+    font: 18pt &quot;Chilanka&quot;;
+    max-height: 40px;
+    border-style: outset;
+    border-width: 4px;
+    border-radius: 10px;
+}
+</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item alignment="Qt::AlignTop">
+           <widget class="QWidget" name="widget_3" native="true">
+            <property name="styleSheet">
+             <string notr="true">#widget_3{
+    border: none;
+    background-color: rgb(156, 22, 22);
+    border-radius: 20;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item alignment="Qt::AlignTop">
+              <widget class="QWidget" name="widget_5" native="true">
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QFrame" name="frame_4">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_9">
+                   <item>
+                    <widget class="QLabel" name="AddSantaLbl">
+                     <property name="text">
+                      <string>1. Add Santa</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignTop">
+              <widget class="QWidget" name="widget_6" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QFrame" name="frame_5">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                   <item>
+                    <widget class="QTextEdit" name="AddSantaInput">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>48</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignRight">
+                    <widget class="QPushButton" name="AddSantaBtn">
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton {
+    max-width: 200px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Add</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_4" native="true">
+            <property name="styleSheet">
+             <string notr="true">#widget_4{
+    border: none;
+    background-color: rgb(156, 22, 22);
+    border-radius: 20;
+}</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <widget class="QFrame" name="frame_6">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <widget class="QLabel" name="constrainsLbl">
+                  <property name="text">
+                   <string>2. Add constrains</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_7">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    border-style: outset;
+    border-width: 4px;
+    border-radius: 10px;
+}</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <item>
+                 <widget class="QComboBox" name="noDrawLeftBox">
+                  <item>
+                   <property name="text">
+                    <string>test1</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>test2</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="NoDrawLbl">
+                  <property name="text">
+                   <string>doesn't draw</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="noDrawRightBox">
+                  <item>
+                   <property name="text">
+                    <string>test3</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>test4</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item alignment="Qt::AlignRight">
+                 <widget class="QPushButton" name="NoDrawBtn">
+                  <property name="text">
+                   <string>Add</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="Qt::AlignRight">
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="styleSheet">
+             <string notr="true">#frame_3 {
+    border: none;
+    background-color: rgb(156, 22, 22);
+    border-radius: 20;
+}
+
+QPushButton {
+     min-height: 100px;
+ }
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+              <widget class="QLabel" name="generateLbl">
+               <property name="text">
+                <string>3. Generate Santas</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+              <widget class="QPushButton" name="generateBtn">
+               <property name="text">
+                <string>Generate</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="tableContainer" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QTableWidget" name="summaryTable">
+         <property name="styleSheet">
+          <string notr="true">font: 20pt &quot;Chilanka&quot;;
+background-color: rgb(255, 227, 226);</string>
+         </property>
+         <column>
+          <property name="text">
+           <string>Santa</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Doesn't draw</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Secret URL</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

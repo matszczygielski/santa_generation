@@ -3,6 +3,9 @@ from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtGui import QMovie
 
+
+from ui.interface import *
+
 from random import randint
 
 from app.santa import Santa
@@ -11,10 +14,13 @@ from app.santa import Santa
 class AppController(QMainWindow):
     def __init__(self) -> None:
         super(AppController, self).__init__()
-        loadUi("ui/app.ui", self)
+        #loadUi("ui/interface.ui", self)
+
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
 
         self._santas = []
-
+        '''
         # Set up gifs
         santa_movie = QMovie("ui/resources/santa-pic.png")
         self.rightgif_label.setMovie(santa_movie)
@@ -29,6 +35,7 @@ class AppController(QMainWindow):
         self.constrain_pick_left_input.currentIndexChanged.connect(self._pick_constrain_left_activated_handle)
 
         self._refresh_table()
+        '''
 
 
     def _add_santa_handle(self):
